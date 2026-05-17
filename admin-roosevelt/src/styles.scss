@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primario: #4B0082;
+  --color-secundario: #FFD700;
+  --color-acento: #FFB6C1;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-admin {
+  background-color: var(--color-primario);
+}
+
+.navbar-admin .navbar-brand,
+.navbar-admin .nav-link {
+  color: var(--color-secundario) !important;
+  font-weight: bold;
+}
+
+.card-stat .numero {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.tabla-admin thead {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+h2, h3 {
+  color: var(--color-primario);
+}
+
+.btn-danger-admin {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
