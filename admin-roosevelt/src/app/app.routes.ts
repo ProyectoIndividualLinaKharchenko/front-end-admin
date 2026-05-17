@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './paginas/dashboard/dashboard.component';
-import { UsuariosComponent } from './paginas/usuarios/usuarios.component';
-import { MensajesComponent } from './paginas/mensajes/mensajes.component';
+import { Dashboard } from './paginas/dashboard/dashboard';
+import { Usuarios } from './paginas/usuarios/usuarios';
+import { Mensajes } from './paginas/mensajes/mensajes';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'usuarios', component: UsuariosComponent },
-  { path: 'mensajes', component: MensajesComponent },
+  { path: 'dashboard', component: Dashboard },
+  { path: 'usuarios', component: Usuarios },
+  { path: 'mensajes', component: Mensajes },
 ];
